@@ -10,7 +10,7 @@ At first I wanted to add only the name of the product and make it dynamically bu
 
 <br>
 
-When running the script on Windows the script will work with `pathToAddForLinux=""` and will create the folders and files in the same directory as the script. If you want to run it on Linux you need to change `pathToAddForLinux` to and absolute path like `pathToAddForLinux="/home/yourusername/"`, this will be the folder in which the script will create the folders and files, which can also be set for windows.
+When running the script on Windows the script will work with `pathToAddForLinux=""` and will create the folders and files in the same directory as the script. If you want to run it on Linux you need to change `pathToAddForLinux` to and absolute path like `pathToAddForLinux="/home/yourusername/"`, this will be the folder in which the script will create the folders and files, which can also be set for Windows if needed.
 
 ## How it works
 
