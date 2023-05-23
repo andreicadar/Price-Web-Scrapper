@@ -1,6 +1,6 @@
 # WebScrapper
 
-Simple webscrapper using python and `beautifulsoup4` and used `matplotlib` to plot the price graphs
+Simple webscrapper using python and `beautifulsoup4` and used `matplotlib` to plot the price graphs. It monitors the evolution of prices of a set of products.
 
 ## Usage
 
