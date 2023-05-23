@@ -160,30 +160,18 @@ def replace_space(string, strings, currentIndex):
 # search_price(altex_name, altex_name)
 # search_price(mediaGalaxy_name, "https://mediagalaxy.ro/"+altex_name);
 
-def PC_Garage_method(strings):
-    found = 0;
-    for string in strings:
-        result = search_price(string, "https://www.pcgarage.ro/" + string)
-        if result != -1:
-            print(f"The price of {item_name} is {result} on https://www.pcgarage.ro/{string}")
-            found = 1
-            break
-    if found == 0:
-        print("nu s a gasit pe" + "https://www.pcgarage.ro/")
+# def PC_Garage_method(strings):
+#     found = 0;
+#     for string in strings:
+#         result = search_price(string, "https://www.pcgarage.ro/" + string)
+#         if result != -1:
+#             print(f"The price of {item_name} is {result} on https://www.pcgarage.ro/{string}")
+#             found = 1
+#             break
+#     if found == 0:
+#         print("nu s a gasit pe" + "https://www.pcgarage.ro/")
 
 
-# print(item_name)
-# strings = []
-# replace_space(item_name, strings, 0)
-# print(strings)
-# PC_Garage_method(strings)
-
-
-# item_name = "S23 ultra"
-# search_price(item_name, "https://www.emag.ro/telefon-mobil-samsung-galaxy-s23-ultra-dual-sim-8gb-ram-256gb-5g-phantom-black-sm-s918bzkdeue/pd/D07R8RMBM/?_gl=1*mib327*_up*MQ..&gclid=CjwKCAjwuqiiBhBtEiwATgvixC8siMkJ6xt_J3Pv3O6b_s5Tm3OSntUE80vSbblHJLB8leehKHo2aRoCNPMQAvD_BwE")
-#
-# item_name = "S23 plus"
-# search_price(item_name, "https://www.emag.ro/telefon-mobil-samsung-galaxy-s23-plus-dual-sim-8gb-ram-256gb-5g-phantom-black-sm-s916bzkdeue/pd/DB7R8RMBM/")
 
 products_dict = json.loads(json.dumps(products))
 entries = products_dict['entries']
