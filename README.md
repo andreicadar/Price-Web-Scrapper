@@ -16,7 +16,7 @@ When running the script on Windows the script will work with `pathToAddForLinux=
 
 ### Parsing
 
-Using BeautifulSoap I HTML parse the page and depending on the website I find a way to get the price of the product. Each website differs greatly on how they display their prices in the html. A lot of problems arise when there are promotions, returned products etc. For example this is the code for parsing the price on Altex and Mediagalaxy.
+Using BeautifulSoap I HTML parse the page and depending on the website I find a way to get the price of the product. Each website differs greatly on how they display their prices in the html. A lot of problems arise when there are promotions, returned products etc. If an product is an offer it gets that smallest discounted price on each of these websites. For example this is the code for parsing the price on Altex and Mediagalaxy.
 
 ```python
 
@@ -51,3 +51,7 @@ The script runs three times a day at hour 00:00, 08:00, 16:00. It adds the price
 Example of a graph:
 
 ![Display Image](Samsung%20S23%20Plus/PCGarage_PriceGraph.png)
+
+## Problems
+
+Some problems still can arise on Emag when they have returned products. Have not found a way yet to distinguish between the price of a returned product and the real price.
