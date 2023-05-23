@@ -44,7 +44,7 @@ Using BeautifulSoap I HTML parse the page and depending on the website I find a 
 
 ### Plots
 
-The script runs three times a day at hour 00:00, 08:00, 16:00. It adds the price and the current date for each product of each store in a product_store specific txt file. Each product has its own folder where data and graphs are stored. Then it plots a graph of the price over time for each product and saves the graph in an image with the name of the product and the store it belongs to using matplotlib. The X Axis is set on AutoScale so we do not need to worry about the readability of the graph in time.
+The script runs three times a day at hour 00:00, 08:00, 16:00. It adds the price and the current date for each product of each store in a store specific txt file. Each product has its own folder where data and graphs are stored. Then it plots a graph of the price over time for each product and saves the graph in an image with the name of the the store it belongs to using matplotlib. The X Axis is set on AutoScale so we do not need to worry about the readability of the graph in time.
 
 <br>
 
