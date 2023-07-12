@@ -10,13 +10,13 @@ At first I wanted to add only the name of the product and make it dynamically bu
 
 <br>
 
-When running the script on Windows the script will work with `pathToAddForLinux=""` and will create the folders and files in the same directory as the script. If you want to run it on Linux you need to change `pathToAddForLinux` to and absolute path like `pathToAddForLinux="/home/yourusername/"`, this will be the folder in which the script will create the folders and files, which can also be set for Windows if needed.
+When running the script on Windows the script will work with `pathToAddForLinux=""` and will create the folders and files in the same directory as the script. If you want to run it on Linux you need to change `pathToAddForLinux` to add absolute path like `pathToAddForLinux="/home/yourusername/"`, this will be the folder in which the script will create the folders and files, which can also be set for Windows if needed.
 
 ## How it works
 
 ### Parsing
 
-Using `beautifulsoup4` I parse the HTML page of the website and depending on the it I find a way to get the price of the product. Each website differs greatly on how they display their prices in the HTML. A lot of problems arise when there are promotions, returned products etc. If an product has an offer the script gets that smallest discounted price on each of these websites. For example this is the code for parsing the price on Altex and Mediagalaxy.
+Using `beautifulsoup4` I parse the HTML page of the website and depending on the it I find a way to get the price of the product. Each website differs greatly on how they display their prices in the HTML. A lot of problems arise when there are promotions, returned products etc. If an product has an offer the script gets that smallest discounted price on each of these websites. For example this is the code for parsing the price on Altex and MediaGalaxy.
 
 ```python
 
